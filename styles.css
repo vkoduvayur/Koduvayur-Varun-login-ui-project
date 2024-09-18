@@ -1,25 +1,108 @@
-body {
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row-wrap;
+    align-content: center;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
-.box {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 40vw;
-    height: 30vh;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px 12px #e6f2f2;
-    align-items: center;
+#inbox {
+    background-color:rgb(79, 202, 254);
+    margin-bottom: 5px;
+    margin-right: 200px;
 }
 
-button {
-    display: inline-block;
-    justify-content: center;
-    color: #ffffff;
-    background-color: #2eb6ff;
-    cursor: pointer;
-    height: 30px;
-    width: 200px;
+#sent {
+    background-color:rgb(208, 156, 248);
+    margin-bottom: 5px;
+    margin-right: 200px;
+}
+
+#drafts {
+    background-color:rgb(39, 52, 2);
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    margin-right: 200px;
+}
+
+#starred {
+    background-color: rgb(247, 255, 139);
+    margin-bottom: 5px;
+    margin-right: 200px;
+}
+
+#important {
+    background-color:azure;
+    margin-bottom: 5px;
+    margin-right: 200px;
+}
+
+#spam {
+    background-color:rgb(169, 48, 0);
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    margin-right: 200px;
+}
+
+#trash {
+    background-color:rgb(75, 14, 0);
+    color: rgb(255, 255, 255);
+    margin-right: 200px;
+}
+
+#compose-mail {
+    margin-bottom: 5px;
+}
+
+#calendar {
+    background-color:rgb(188, 245, 171);
+    margin-bottom: 5px;
+}
+
+#notepad {
+    background-color: rgb(157, 250, 185);
+    margin-bottom: 5px;
+}
+
+#contacts {
+    background-color: rgb(243, 215, 179);
+    margin-bottom: 5px;
+}
+
+#support {
+    background-color: rgb(3, 37, 18);
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#settings {
+    background-color: rgb(23, 1, 96);
+    color: rgb(255, 255, 255);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding-right: 40px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#new-message {
+    display: flex;
+    margin-top: 20px;
 }
